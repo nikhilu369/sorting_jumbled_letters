@@ -1,0 +1,61 @@
+
+from itertools import permutations
+
+mw=set()
+
+z=input('Enter the letters:')
+s=z.lower()
+print('The letter u entered')
+print([x for x in s])
+le=len(s)
+
+count= len(s)+1
+
+print('All of possible combination:')
+for ti in range(1,len(s)):
+ count=count-1
+ for ye in permutations(s,count):
+  c=(''.join(ye))
+  mw.add(c) 
+
+ans = input('do u want to see all possible combination....?(y/n)')
+ans.lower()
+if 'Y'or'y'in ans:
+    for lbl in mw:
+      print (lbl)
+else:
+ print('this might a minute')
+ 
+  
+print('Total number of possible outcome = ',len(mw))
+print(">")
+print('Meaning words are:')
+fw=[]
+for ii in mw:
+ if ii in a:
+        # print(ii) 
+        fw.append(ii)
+ elif   ii in d:
+         #print(ii)
+        fw.append(ii)
+ elif   ii in e:
+         #print(ii)
+        fw.append(ii)
+ elif   ii in f:
+         #print(ii)
+        fw.append(ii)
+ elif   ii in g:
+         #print(ii)
+        fw.append(ii)
+ elif   ii in h:
+         #print(ii)
+        fw.append(ii)
+ elif   ii in i:
+         #print(ii)
+        fw.append(ii)
+ elif   ii in q:
+         #print(ii)
+        fw.append(ii)
+print('Number off  words that can be made are \n',len(fw))
+print(fw)
+input('press enter to exit')
